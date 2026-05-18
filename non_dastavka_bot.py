@@ -22,10 +22,7 @@ USERS_FILE = "users_data.json"
 NON_TURI, NON_SONI, TELEFON, LOKATSIYA, LOKATSIYA_YANGILASH = range(5)
 
 NON_TURLARI = {
-    "🍞 Oq non": 1500,
-    "🥖 Bugʻdoy non": 2000,
-    "🫓 Lavaş": 1000,
-    "🥐 Boʻlka": 1200,
+    "🍞 Oq non":,
 }
 
 logging.basicConfig(
