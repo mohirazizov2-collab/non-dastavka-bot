@@ -390,7 +390,7 @@ async def _buyurtma_yuborish(update: Update, context: ContextTypes.DEFAULT_TYPE,
         "━━━━━━━━━━━━━━━━━\n"
         f"👤 Mijoz: {user.full_name}\n"
         f"📱 Telefon: `{telefon}`\n"
-        f"🆔 Telegram ID: `{user.id}`\n"
+        f"💬 Telegram: {("@" + user.username) if user.username else "username yoq"}\n"
         "━━━━━━━━━━━━━━━━━\n"
         f"🍞 Mahsulot: {NON_NOMI}\n"
         f"🔢 Soni: *{soni} dona*\n"
