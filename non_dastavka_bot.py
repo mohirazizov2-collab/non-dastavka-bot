@@ -241,8 +241,8 @@ async def buyurtma_boshlash(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def non_soni_qabul(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         soni = int(update.message.text.strip())
-        if soni <= 0 or soni > 100:
-            await update.message.reply_text("⚠️ Iltimos, 1 dan 100 gacha raqam kiriting.")
+        if soni <= 0 or soni > 1000:
+            await update.message.reply_text("⚠️ Iltimos, 1 dan 1000 gacha raqam kiriting.")
             return NON_SONI
     except ValueError:
         await update.message.reply_text("⚠️ Iltimos, faqat *raqam* kiriting.", parse_mode="Markdown")
