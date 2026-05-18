@@ -12,7 +12,7 @@ from telegram.ext import (
     ConversationHandler, filters, ContextTypes
 )
 
-BOT_TOKEN = "8895387043:AAHLZ9romIgd-fR4gtpHX3fQ_lu9a5skTPU"
+BOT_TOKEN = "8895387043:AAGeu1YomhIuIv_brIxL75gzKoDyFuaLMq0"
 DELIVERCHI_CHAT_ID = 6514150973
 
 USERS_FILE = "users_data.json"
@@ -241,8 +241,8 @@ async def buyurtma_boshlash(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def non_soni_qabul(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         soni = int(update.message.text.strip())
-        if soni <= 0 or soni > 1000:
-            await update.message.reply_text("⚠️ Iltimos, 1 dan 1000 gacha raqam kiriting.")
+        if soni <= 0 or soni > 100:
+            await update.message.reply_text("⚠️ Iltimos, 1 dan 100 gacha raqam kiriting.")
             return NON_SONI
     except ValueError:
         await update.message.reply_text("⚠️ Iltimos, faqat *raqam* kiriting.", parse_mode="Markdown")
